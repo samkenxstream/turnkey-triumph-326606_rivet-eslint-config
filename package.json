@@ -1,0 +1,20 @@
+{
+  "name": "eslint-config-rivet",
+  "version": "1.0.0",
+  "description": "An eslint configuration set for Rivet-related projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/indiana-university/rivet-eslint-config.git"
+  },
+  "author": "Rachel O'Connor",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/indiana-university/rivet-eslint-config/issues"
+  },
+  "homepage": "https://github.com/indiana-university/rivet-eslint-config#readme",
+  "dependencies": {}
+}
