@@ -1,4 +1,4 @@
-# eslint-config-ro
+# eslint-config-rivet
 This package extends `eslint:recommended` (see [ESLint documentation](https://eslint.org/docs/user-guide/configuring#using-eslintrecommended)) with rules specific to creating projects within the Rivet extended universe.
 
 ## Installation
