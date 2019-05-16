@@ -22,7 +22,7 @@ Next you will need to setup the configuration for your project using one of the 
 }
 ```
 
-2. `.eslintrc`
+2. `.eslintrc.json`
 
 ```
 {
