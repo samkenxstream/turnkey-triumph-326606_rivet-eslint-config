@@ -168,7 +168,7 @@ It's important to note that when using transpilers (such as `babel`) and linting
 ### VSCode
 
 1. Navigate to the VS Code settings (`Code/File` -> `Preferences` -> `Settings`)
-1. CLick on the `{}` icon in the top right corner to open the `settings.json` file
+1. Click on the `{}` icon in the top right corner to open the `settings.json` file
 
 ```
 "editor.formatOnSave": true,
