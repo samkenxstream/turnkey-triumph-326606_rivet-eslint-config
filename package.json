@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-rivet",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "An eslint configuration set for Rivet-related projects",
   "main": "index.js",
   "scripts": {
@@ -19,14 +19,14 @@
   "homepage": "https://github.com/indiana-university/rivet-eslint-config#readme",
   "peerDependencies": {
     "eslint": "^6.8.0",
-    "eslint-config-prettier": "^3.1.2",
+    "eslint-config-prettier": "^6.9.0",
     "eslint-plugin-html": "^6.0.0",
     "eslint-plugin-prettier": "^3.1.2",
     "prettier": "^1.19.1"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
-    "eslint-config-prettier": "^3.1.2",
+    "eslint-config-prettier": "^6.9.0",
     "eslint-plugin-html": "^6.0.0",
     "eslint-plugin-prettier": "^3.1.2",
     "prettier": "^1.19.1"
