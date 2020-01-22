@@ -1,11 +1,11 @@
 # eslint-config-rivet
-This package extends `eslint:recommended` (see [ESLint documentation](https://eslint.org/docs/user-guide/configuring#using-eslintrecommended)) with rules specific to creating projects within the Rivet extended universe.
+This package extends `eslint:recommended` (see [ESLint documentation](https://eslint.org/docs/user-guide/configuring#using-eslintrecommended)) with rules specific to creating projects within the Rivet extended universe. It integrates with [Prettier](https://prettier.io/) to fix issues and formatting errors.
 
 ## Installation
 
-You can include this package in your project by installing it via `npm`:
+You can include this package (and its required peer dependencies) in your project by installing it via `npm`:
 ```
-npm install --save-dev eslint-config-rivet
+npx install-peerdeps --dev eslint-config-rivet
 ```
 
 ## Usage
@@ -163,6 +163,27 @@ module.exports = {
 
 It's important to note that when using transpilers (such as `babel`) and linting tools, the order they are listed in usually matters as you want to ensure that your code is linted before being transpiled.
 
-### Additional integrations
+## Additional integrations
 
-ESLint has [integrations available for most of the major, modern code editors](https://eslint.org/docs/user-guide/integrations#editors).
+### VSCode
+
+1. Navigate to the VS Code settings (`Code/File` -> `Preferences` -> `Settings`)
+1. Click on the `{}` icon in the top right corner to open the `settings.json` file
+
+```
+"editor.formatOnSave": true,
+// turn it off for JS and JSX, we will do this via eslint
+"[javascript]": {
+  "editor.formatOnSave": false
+},
+// tell the ESLint plugin to run on save
+"editor.codeActionsOnSave": {
+  "source.fixAll": true
+},
+// Optional BUT IMPORTANT: If you have the prettier extension enabled for other languages like CSS and HTML, turn it off for JS since we are doing it through Eslint already
+"prettier.disableLanguages": ["javascript", "javascriptreact"],
+```
+
+## Acknowledgement
+
+Much of the `3.0.0` version of this config was inspired/borrowed from [Wes Bos](https://wesbos.com/)' [eslint-config-wesbos](https://github.com/wesbos/eslint-config-wesbos).
