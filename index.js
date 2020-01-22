@@ -8,13 +8,21 @@ module.exports = {
     'browser': true
   },
   'parserOptions': {
-    'ecmaVersion': 6,
+    'ecmaVersion': 10,
     'sourceType': 'module'
   },
-  'extends': ['eslint:recommended'],
+  'extends': [
+    'eslint:recommended',
+    'prettier'
+  ],
   'rules': {
-    'indent': ['error', 2, { 'SwitchCase': 1 }],
-    'no-tabs': 'error',
-    'quotes': ['error', 'single']
-  }
+    'lines-between-class-members': 'error',
+    'prefer-const': ['error', { 'destructuring': 'all'}],
+    'quotes': ['error', 'single', { 'avoidEscape': true, 'allowTemplateLiterals': true }],
+    'prettier/prettier': ['error', { 'singleQuote': true, 'printWidth': 80 }]
+  },
+  'plugins': [
+    'html',
+    'prettier'
+  ]
 };
