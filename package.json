@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-rivet",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "An eslint configuration set for Rivet-related projects",
   "main": "index.js",
   "repository": {
